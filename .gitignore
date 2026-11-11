@@ -1,0 +1,28 @@
+# Kiro IDE folder - do not push
+.kiro/
+
+# Node dependencies - too large to push
+node_modules/
+**/node_modules/
+
+# Build output
+dist/
+**/dist/
+build/
+**/build/
+
+# Environment files with secrets
+.env
+**/.env
+
+# Local database store
+.data/
+**/.data/
+
+# Logs
+*.log
+npm-debug.log*
+
+# OS files
+.DS_Store
+Thumbs.db

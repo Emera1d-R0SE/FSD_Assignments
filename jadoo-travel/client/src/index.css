@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: #14183e;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Volkhov', serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif;
+}
+
+img {
+  max-width: 100%;
+}
+
+:root {
+  --orange: #f1a501;
+  --dark-orange: #df6951;
+  --navy: #14183e;
+  --coral: #e17654;
+  --light-bg: #f8f8f8;
+  --text-muted: #5e6282;
+  --purple: #5e35b1;
+}

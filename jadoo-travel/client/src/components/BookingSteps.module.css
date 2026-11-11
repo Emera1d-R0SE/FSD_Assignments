@@ -1,0 +1,161 @@
+.section {
+  display: flex;
+  align-items: center;
+  gap: 80px;
+  padding: 80px 80px;
+  background: #fafafa;
+}
+
+.left {
+  flex: 1;
+}
+
+.label {
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: #5e6282;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+.title {
+  font-size: 42px;
+  font-weight: 700;
+  color: #14183e;
+  margin-bottom: 48px;
+  line-height: 1.2;
+}
+
+.steps {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.step {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.iconBox {
+  min-width: 52px;
+  height: 52px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+}
+
+.stepTitle {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.stepDesc {
+  font-size: 14px;
+  color: #5e6282;
+  line-height: 1.6;
+}
+
+/* ─── RIGHT ─── */
+.right {
+  flex: 1;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.mainCard {
+  background: #fff;
+  border-radius: 26px;
+  overflow: hidden;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.12);
+  width: 340px;
+}
+
+.mainImg {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.cardInfo {
+  padding: 20px;
+}
+
+.cardInfo h4 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.cardInfo p {
+  font-size: 13px;
+  color: #5e6282;
+}
+
+.people {
+  margin-top: 8px !important;
+}
+
+.ongoingCard {
+  position: absolute;
+  top: 30px;
+  right: 0;
+  background: #fff;
+  border-radius: 20px;
+  padding: 16px 20px;
+  box-shadow: 0 12px 40px rgba(0,0,0,0.1);
+  min-width: 180px;
+}
+
+.ongoingLabel {
+  font-size: 11px;
+  color: #5e6282;
+  margin-bottom: 4px;
+}
+
+.ongoingTitle {
+  font-size: 14px;
+  font-weight: 700;
+  color: #14183e;
+  margin-bottom: 10px;
+}
+
+.progressBar {
+  background: #f0f0f0;
+  border-radius: 10px;
+  height: 6px;
+  overflow: hidden;
+  margin-bottom: 6px;
+}
+
+.progressFill {
+  width: 40%;
+  height: 100%;
+  background: linear-gradient(90deg, #7b72e9, #5e35b1);
+  border-radius: 10px;
+}
+
+.progressText {
+  font-size: 11px;
+  color: #7b72e9;
+  font-weight: 600;
+}
+
+@media (max-width: 900px) {
+  .section {
+    flex-direction: column;
+    padding: 60px 24px;
+  }
+
+  .title { font-size: 32px; }
+
+  .ongoingCard { display: none; }
+}

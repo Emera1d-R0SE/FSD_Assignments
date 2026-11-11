@@ -1,0 +1,110 @@
+.input-section {
+  margin-bottom: var(--space-6);
+}
+
+.input-label {
+  display: block;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--color-text-primary);
+  margin-bottom: var(--space-3);
+}
+
+.textarea-wrapper {
+  position: relative;
+}
+
+.announcement-textarea {
+  width: 100%;
+  min-height: 180px;
+  background: var(--color-surface-alt);
+  border: 1.5px solid var(--color-border);
+  border-radius: var(--radius-md);
+  color: var(--color-text-primary);
+  font-family: var(--font-base);
+  font-size: 0.9375rem;
+  line-height: 1.6;
+  padding: var(--space-4);
+  resize: vertical;
+  transition: border-color 0.15s ease;
+  outline: none;
+}
+
+.announcement-textarea::placeholder {
+  color: var(--color-text-subtle);
+}
+
+.announcement-textarea:focus {
+  border-color: var(--color-accent);
+  box-shadow: 0 0 0 3px var(--color-accent-light);
+}
+
+.announcement-textarea:disabled {
+  opacity: 0.6;
+  resize: none;
+}
+
+.textarea-error {
+  border-color: var(--color-error) !important;
+}
+
+.textarea-error:focus {
+  box-shadow: 0 0 0 3px rgba(248, 113, 113, 0.15) !important;
+}
+
+.textarea-footer {
+  display: flex;
+  justify-content: flex-end;
+  min-height: 20px;
+  margin-top: var(--space-2);
+}
+
+.char-count {
+  font-size: 0.75rem;
+  color: var(--color-text-subtle);
+}
+
+.char-count-over {
+  color: var(--color-error);
+  font-weight: 600;
+}
+
+.validation-error {
+  font-size: 0.8125rem;
+  color: var(--color-error);
+  margin-right: auto;
+}
+
+.input-actions {
+  display: flex;
+  gap: var(--space-3);
+  margin-top: var(--space-4);
+  flex-wrap: wrap;
+}
+
+.analyze-btn {
+  min-width: 200px;
+}
+
+/* Inline spinner inside button */
+.btn-spinner {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-top-color: #fff;
+  border-radius: 50%;
+  animation: spin 0.7s linear infinite;
+  flex-shrink: 0;
+}
+
+@media (max-width: 640px) {
+  .input-actions {
+    flex-direction: column;
+  }
+
+  .analyze-btn,
+  .btn-ghost {
+    width: 100%;
+  }
+}

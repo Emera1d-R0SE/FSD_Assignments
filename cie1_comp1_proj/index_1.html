@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task & Habit Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>Task & Habit Tracker</h1>
+    <button id="themeToggle">🌙 Dark Mode</button>
+  </header>
+
+  <nav>
+    <button class="filter-btn active" data-filter="all">All</button>
+    <button class="filter-btn" data-filter="pending">Pending</button>
+    <button class="filter-btn" data-filter="completed">Completed</button>
+  </nav>
+
+  <main>
+    <section id="add-task-section">
+      <form id="taskForm">
+        <input type="text" id="taskInput" placeholder="What do you need to do?" required>
+        <label for="priorityInput">Priority:</label>
+        <select id="priorityInput" title="Select task priority">
+          <option value="low">Low</option>
+          <option value="medium" selected>Medium</option>
+          <option value="high">High</option>
+        </select>
+        <button type="submit">Add Task</button>
+      </form>
+      <p id="errorMsg" class="error"></p>
+    </section>
+
+    <section id="task-list-section">
+      <ul id="taskList"></ul>
+      <p id="emptyMsg">No tasks yet. Add one above!</p>
+    </section>
+  </main>
+
+  <footer>
+    <p id="taskCount">0 tasks</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

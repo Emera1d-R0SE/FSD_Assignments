@@ -1,0 +1,63 @@
+.table-scroll {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  border-radius: var(--radius-md);
+}
+
+.dates-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.875rem;
+  min-width: 500px;
+}
+
+.dates-table th {
+  text-align: left;
+  padding: var(--space-3) var(--space-4);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+  background: var(--color-surface-alt);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.dates-table th:first-child { border-radius: var(--radius-sm) 0 0 0; }
+.dates-table th:last-child  { border-radius: 0 var(--radius-sm) 0 0; }
+
+.dates-table td {
+  padding: var(--space-3) var(--space-4);
+  color: var(--color-text-primary);
+  border-bottom: 1px solid var(--color-border);
+  vertical-align: top;
+}
+
+.dates-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.dates-table tbody tr:hover td {
+  background: var(--color-surface-alt);
+}
+
+.date-cell {
+  font-weight: 600;
+  white-space: nowrap;
+  color: var(--color-accent) !important;
+}
+
+.time-cell {
+  white-space: nowrap;
+  color: var(--color-text-muted) !important;
+  font-size: 0.8125rem;
+}
+
+.event-cell {
+  font-weight: 500;
+}
+
+.desc-cell {
+  color: var(--color-text-muted) !important;
+  font-size: 0.8125rem;
+}
