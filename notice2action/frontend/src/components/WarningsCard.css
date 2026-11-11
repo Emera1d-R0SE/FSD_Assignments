@@ -1,0 +1,33 @@
+.warnings-card {
+  border-left: 3px solid var(--color-warning);
+  background: var(--color-warning-bg);
+}
+
+.warnings-card .card-title {
+  color: var(--color-warning);
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.warnings-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.warning-item {
+  display: flex;
+  align-items: baseline;
+  gap: var(--space-3);
+  font-size: 0.9375rem;
+  color: var(--color-text-primary);
+  line-height: 1.5;
+}
+
+.warning-icon {
+  color: var(--color-warning);
+  flex-shrink: 0;
+  font-size: 0.85rem;
+}

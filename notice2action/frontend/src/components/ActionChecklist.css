@@ -1,0 +1,55 @@
+.action-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.action-item {
+  border-radius: var(--radius-md);
+  padding: var(--space-4) var(--space-5);
+  border: 1px solid var(--color-border);
+  background: var(--color-surface-alt);
+}
+
+/* Priority left-border accent */
+.action-high   { border-left: 3px solid var(--color-high);   background: var(--color-high-bg);   }
+.action-medium { border-left: 3px solid var(--color-medium); background: var(--color-medium-bg); }
+.action-low    { border-left: 3px solid var(--color-low);    background: var(--color-low-bg);    }
+
+.action-header {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  flex-wrap: wrap;
+  margin-bottom: var(--space-3);
+}
+
+.action-deadline {
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--color-text-muted);
+  display: flex;
+  align-items: center;
+  gap: var(--space-1);
+}
+
+.action-text {
+  font-size: 0.9375rem;
+  font-weight: 500;
+  color: var(--color-text-primary);
+  line-height: 1.5;
+  margin-bottom: var(--space-2);
+}
+
+.action-reason {
+  font-size: 0.8125rem;
+  color: var(--color-text-muted);
+  line-height: 1.5;
+  font-style: italic;
+}
+
+.checklist-empty {
+  font-size: 0.9rem;
+  color: var(--color-text-muted);
+}

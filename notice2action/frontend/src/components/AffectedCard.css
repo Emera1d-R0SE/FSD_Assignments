@@ -1,0 +1,21 @@
+.affected-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.affected-item {
+  display: flex;
+  align-items: baseline;
+  gap: var(--space-3);
+  font-size: 0.9375rem;
+  color: var(--color-text-primary);
+}
+
+.affected-dot {
+  color: var(--color-accent);
+  font-size: 0.5rem;
+  flex-shrink: 0;
+  margin-top: 2px;
+}

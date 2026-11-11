@@ -1,0 +1,19 @@
+.loading-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-4);
+  padding: var(--space-12) var(--space-6);
+  text-align: center;
+}
+
+.loading-title {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: var(--color-text-primary);
+}
+
+.loading-subtitle {
+  font-size: 0.875rem;
+  color: var(--color-text-muted);
+}
